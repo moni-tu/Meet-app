@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/moni-tu/Meet-app.git/static/css/main.073c9b0a.css",
+    "main.js": "/moni-tu/Meet-app.git/static/js/main.aadd7e8b.js",
+    "static/js/377.dda790c9.chunk.js": "/moni-tu/Meet-app.git/static/js/377.dda790c9.chunk.js",
+    "service-worker.js": "/moni-tu/Meet-app.git/service-worker.js",
+    "static/media/logo.svg": "/moni-tu/Meet-app.git/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
+    "index.html": "/moni-tu/Meet-app.git/index.html",
+    "main.073c9b0a.css.map": "/moni-tu/Meet-app.git/static/css/main.073c9b0a.css.map",
+    "main.aadd7e8b.js.map": "/moni-tu/Meet-app.git/static/js/main.aadd7e8b.js.map",
+    "377.dda790c9.chunk.js.map": "/moni-tu/Meet-app.git/static/js/377.dda790c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.aadd7e8b.js"
+  ]
+}
