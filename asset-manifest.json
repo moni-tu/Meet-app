@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/moni-tu/Meet-app.git/static/css/main.073c9b0a.css",
-    "main.js": "/moni-tu/Meet-app.git/static/js/main.aadd7e8b.js",
-    "static/js/377.dda790c9.chunk.js": "/moni-tu/Meet-app.git/static/js/377.dda790c9.chunk.js",
-    "service-worker.js": "/moni-tu/Meet-app.git/service-worker.js",
-    "static/media/logo.svg": "/moni-tu/Meet-app.git/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
-    "index.html": "/moni-tu/Meet-app.git/index.html",
-    "main.073c9b0a.css.map": "/moni-tu/Meet-app.git/static/css/main.073c9b0a.css.map",
-    "main.aadd7e8b.js.map": "/moni-tu/Meet-app.git/static/js/main.aadd7e8b.js.map",
-    "377.dda790c9.chunk.js.map": "/moni-tu/Meet-app.git/static/js/377.dda790c9.chunk.js.map"
+    "main.css": "/moni-tu/Meet-app/static/css/main.073c9b0a.css",
+    "main.js": "/moni-tu/Meet-app/static/js/main.41f3a718.js",
+    "static/js/377.dda790c9.chunk.js": "/moni-tu/Meet-app/static/js/377.dda790c9.chunk.js",
+    "service-worker.js": "/moni-tu/Meet-app/service-worker.js",
+    "static/media/logo.svg": "/moni-tu/Meet-app/static/media/logo.2d27ead7c10f774c5306bcf3c257a728.svg",
+    "index.html": "/moni-tu/Meet-app/index.html",
+    "main.073c9b0a.css.map": "/moni-tu/Meet-app/static/css/main.073c9b0a.css.map",
+    "main.41f3a718.js.map": "/moni-tu/Meet-app/static/js/main.41f3a718.js.map",
+    "377.dda790c9.chunk.js.map": "/moni-tu/Meet-app/static/js/377.dda790c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.aadd7e8b.js"
+    "static/js/main.41f3a718.js"
   ]
 }
