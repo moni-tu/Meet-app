@@ -2,8 +2,15 @@
 
 # dependencies
 /node_modules
+node_modules
 /.pnp
 .pnp.js
+
+# serverless directories
+.serverless
+
+# environment variables
+config.json
 
 # testing
 /coverage
