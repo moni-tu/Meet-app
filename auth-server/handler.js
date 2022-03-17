@@ -20,7 +20,7 @@ const credentials = {
   token_uri: "https://oauth2.googleapis.com/token",
   auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
   redirect_uris: ["https://moni-tu.github.io/Meet-app"],
-  javascript_origins: ["https://moni-tu.github.io", "http://localhost:3000"],
+  javascript_origins: ["https://moni-tu.github.io", "http://127.0.0.1:8080"],
 };
 const { client_secret, client_id, redirect_uris, calendar_id } = credentials;
 const oAuth2Client = new google.auth.OAuth2(
@@ -87,6 +87,9 @@ module.exports.getAccessToken = async (event) => {
       // Respond with OAuth token 
       return {
         statusCode: 200,
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          },
         body: JSON.stringify(token),
       };
     })
