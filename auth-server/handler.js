@@ -88,7 +88,7 @@ module.exports.getAccessToken = async (event) => {
       return {
         statusCode: 200,
         headers: {
-          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Origin": "https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.readonly&response_type=code&client_id=1021568279891-dig29rg4c5ul8juvejmhrgafft5i11rm.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fmoni-tu.github.io%2FMeet-app",
           },
         body: JSON.stringify(token),
       };
