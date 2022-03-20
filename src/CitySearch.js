@@ -17,6 +17,7 @@ class CitySearch extends Component {
             type='text'
             className='city'
             value= {this.state.query}
+            onChange={this.handleInputChanged}
             />
             <ul className='suggestions'>
             </ul>
