@@ -14,6 +14,10 @@ import axios from 'axios';
     return locations;
   };
 
-    export const getEvents = async () => {
-    return mockData;
+  export const getEvents = async () => {
+  return mockData;
   };
+
+  export const getAccessToken = async () => {
+
+  }
