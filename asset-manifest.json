@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/moni-tu/Meet-app/static/css/main.073c9b0a.css",
-    "main.js": "/moni-tu/Meet-app/static/js/main.41f3a718.js",
+    "main.css": "/moni-tu/Meet-app/static/css/main.1f6e645d.css",
+    "main.js": "/moni-tu/Meet-app/static/js/main.f7bf7d86.js",
     "static/js/377.dda790c9.chunk.js": "/moni-tu/Meet-app/static/js/377.dda790c9.chunk.js",
     "service-worker.js": "/moni-tu/Meet-app/service-worker.js",
-    "static/media/logo.svg": "/moni-tu/Meet-app/static/media/logo.2d27ead7c10f774c5306bcf3c257a728.svg",
     "index.html": "/moni-tu/Meet-app/index.html",
-    "main.073c9b0a.css.map": "/moni-tu/Meet-app/static/css/main.073c9b0a.css.map",
-    "main.41f3a718.js.map": "/moni-tu/Meet-app/static/js/main.41f3a718.js.map",
+    "main.1f6e645d.css.map": "/moni-tu/Meet-app/static/css/main.1f6e645d.css.map",
+    "main.f7bf7d86.js.map": "/moni-tu/Meet-app/static/js/main.f7bf7d86.js.map",
     "377.dda790c9.chunk.js.map": "/moni-tu/Meet-app/static/js/377.dda790c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.41f3a718.js"
+    "static/css/main.1f6e645d.css",
+    "static/js/main.f7bf7d86.js"
   ]
 }
