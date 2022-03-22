@@ -15,10 +15,7 @@ import axios from 'axios';
   };
 
   export const getEvents = async () => {
-    if (window.location.href.startsWith('http://localhost')) {
-      return mockData;
-    }
-    
+
     const checkToken = async (accessToken) => {
       const result = await fetch(
         `https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=${accessToken}`
@@ -29,6 +26,30 @@ import axios from 'axios';
       return result;
     
     };
+
+    if (window.location.href.startsWith('http://localhost')) {
+      return mockData;
+    }
+
+    NProgress.start();
+    if (window.location.href.startsWith("http://localhost")) {
+      NProgress.done();
+      return mockData;
+    }
+    const token = await getAccessToken();
+    if (token) {
+      removeQuery();
+      const url = 'https://sdji75aqzf.execute-api.eu-central-1.amazonaws.com/dev/api/get-events' + '/' + token;
+      const result = await axios.get(url);
+      if (result.data) {
+        var locations = extractLocations(result.data.events);
+        localStorage.setItem("lastEvents", JSON.stringify(result.data));
+        localStorage.setItem("locations", JSON.stringify(locations));
+      }
+      NProgress.done();
+      return result.data.events;
+    }
+
   };
 
   export const getAccessToken = async () => {
