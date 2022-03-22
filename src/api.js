@@ -40,6 +40,7 @@ import NProgress from 'nprogress';
     const token = await getAccessToken();
     if (token) {
       removeQuery();
+      // eslint-disable-next-line
       const url = 'https://sdji75aqzf.execute-api.eu-central-1.amazonaws.com/dev/api/get-events' + '/' + token;
       const result = await axios.get(url);
       if (result.data) {
@@ -89,6 +90,7 @@ import NProgress from 'nprogress';
   const getToken = async (code) => {
     const encodeCode = encodeURIComponent(code);
     const { access_token } = await fetch(
+      // eslint-disable-next-line
       "https://sdji75aqzf.execute-api.eu-central-1.amazonaws.com/dev/api/token" + "/" + encodeCode
     )
       .then((res) => {
