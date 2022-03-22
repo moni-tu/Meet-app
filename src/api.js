@@ -9,7 +9,7 @@ import NProgress from 'nprogress';
  * It will also remove all duplicates by creating another new array using the spread operator and spreading a Set.
  * The Set will remove all duplicates from the array.
  */
- export const extractLocations = (events) => {
+  export const extractLocations = (events) => {
     var extractLocations = events.map((event) => event.location);
     var locations = [...new Set(extractLocations)];
     return locations;
@@ -84,5 +84,19 @@ import NProgress from 'nprogress';
       return code && getToken(code);
     }
     return accessToken;
-
   }
+
+  const getToken = async (code) => {
+    const encodeCode = encodeURIComponent(code);
+    const { access_token } = await fetch(
+      'https://sdji75aqzf.execute-api.eu-central-1.amazonaws.com/dev/api/token' + '/' + encodeCode
+    )
+      .then((res) => {
+        return res.json();
+      })
+      .catch((error) => error);
+  
+    access_token && localStorage.setItem("access_token", access_token);
+  
+    return access_token;
+  };
