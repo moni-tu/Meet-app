@@ -1,5 +1,6 @@
 import { mockData } from './mock-data';
 import axios from 'axios';
+import NProgress from 'nprogress';
 /**
  *
  * @param {*} events:
@@ -49,7 +50,20 @@ import axios from 'axios';
       NProgress.done();
       return result.data.events;
     }
+  };
 
+  const removeQuery = () => {
+    if (window.history.pushState && window.location.pathname) {
+      var newurl =
+        window.location.protocol +
+        "//" +
+        window.location.host +
+        window.location.pathname;
+      window.history.pushState("", "", newurl);
+    } else {
+      newurl = window.location.protocol + "//" + window.location.host;
+      window.history.pushState("", "", newurl);
+    }
   };
 
   export const getAccessToken = async () => {
