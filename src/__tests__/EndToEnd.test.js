@@ -1,5 +1,25 @@
-import { getJestCucumberConfiguration } from "jest-cucumber/dist/src/configuration";
 import puppeteer from "puppeteer";  
 
 describe('show/hide an event details', () => {
+
+    beforeAll(async () => {
+        jest.setTimeout(30000);
+    });
+
+    /* afterAll(() => {
+        browser.close();
+    }); */
+
+    test('An event element is collapsed by default', async () => {
+        const browser = await puppeteer.launch();
+    
+        const page = await browser.newPage();
+        await page.goto('http://localhost:3000/');
+    
+        await page.waitForSelector('.event');
+    
+        const eventDetails = await page.$('.event .summary');
+        expect(eventDetails).toBeNull();
+        browser.close();
+      });
 });
