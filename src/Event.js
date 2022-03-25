@@ -17,6 +17,7 @@ handleClick = () => {
     const { collapsed } = this.state;
 
     return <div className="event">
+        {/* info shown by default */}
         <h2 className="summary">{event.summary}</h2>
         <p className="start-date">
             {event.start.dateTime} ({event.start.timeZone})

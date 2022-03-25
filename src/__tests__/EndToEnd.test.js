@@ -6,7 +6,7 @@ describe('show/hide an event details', () => {
     jest.setTimeout(30000);
     beforeAll(async () => {
       
-      const browser = await puppeteer.launch({
+       browser = await puppeteer.launch({
         headless: false,
         slowMo: 250, // slow down by 250ms
        ignoreDefaultArgs: ['--disable-extensions'] // ignores default setting that causes timeout errors
@@ -18,7 +18,7 @@ describe('show/hide an event details', () => {
 
     afterAll(() => {
         browser.close();
-      });
+    });
 
     test('An event element is collapsed by default', async () => {   
         const eventDetails = await page.$('.event .event__Details');
