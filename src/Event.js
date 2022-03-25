@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Event extends Component {
 
 state = {
-    collapsed: true
+    collapsed: true,
 }
 
 handleClick = () => {
@@ -25,7 +25,18 @@ handleClick = () => {
         <p className="location">
             {event.location}
         </p>
+
+        {!this.state.collapsed && (
+          <div className="event__moreDetails">
+            <p className="event__end">{event.end.dateTime}</p>
+            <p className="event__description">{event.description}</p>
+            <p className="event__location">{event.location}</p>
+            <p className="event__calendarLink">{event.htmlLink}</p>
+          </div>
+        )}
+
         <button className={`${collapsed ? "show" : "hide"}-details`} onClick={this.handleClick}>{collapsed ? "Show Details" : "Hide Details"}</button>
+    
     </div>;
   }
 }
