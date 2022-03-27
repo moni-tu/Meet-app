@@ -24,7 +24,6 @@ class NumberOfEvents extends Component {
             onChange={this.handleInputChange} 
             value={numberOfEvents} 
             className="numberOfEvents"/>
-          
       </div>
     );
   }
