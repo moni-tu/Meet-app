@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { ErrorAlert } from './Alert';
 
 class NumberOfEvents extends Component {
 
     state = {
 		numberOfEvents: '20',
+    errorText:''
 	}
 
 	handleInputChange = (event) => {
@@ -26,6 +28,7 @@ class NumberOfEvents extends Component {
           value={numberOfEvents} 
           className="numberOfEvents"
         />
+        <ErrorAlert text ={this.state.errorText}/>
       </div>
     );
   } 
