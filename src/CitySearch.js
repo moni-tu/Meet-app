@@ -14,7 +14,7 @@ class CitySearch extends Component {
         this.setState({showSuggestions:true});
         const suggestions = this.props.locations.filter((location) => {
             return location.toUpperCase().indexOf(value.toUpperCase()) > -1;
-          });
+        });
             if (suggestions.lenght === 0) {
               this.setState({
                   query: value,
@@ -26,12 +26,7 @@ class CitySearch extends Component {
                 suggestions,
                 infoText: ''
             });
-          }
-        
-        this.setState({ 
-            query: value,
-            suggestions, 
-        });
+        }
     };
 
     handleItemClicked = (suggestion) => {
@@ -45,7 +40,7 @@ class CitySearch extends Component {
     render() {
         return (
         <div className='CitySearch'>
-            <InfoAlert text= {this.state.InfoText}/>
+            <InfoAlert text= {this.state.infoText}/>
             <input 
             type='text'
             className='city'
