@@ -14,6 +14,7 @@ class App extends Component {
     locations: [],
     numberOfEvents: 20,
     currentLocation: 'all',
+    showWelcomeScreen: 'undefined'
   };
 
   updateEvents = (location, eventCount) => {
@@ -65,6 +66,7 @@ class App extends Component {
   }
 
   render() {
+    if (this.state.showWelcomeScreen === undefined) return <div className="App" />
     return (
       <div className="App">
         <CitySearch locations={this.state.locations} updateEvents={this.updateEvents}/>
