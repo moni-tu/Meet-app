@@ -29,7 +29,6 @@ class NumberOfEvents extends Component {
 
     return (
       <div className='NumberOfEvents' style= {{ position:"relative", overflow:"auto"}}> 
-         
          <p> Show <input
           type="number"
           onChange={this.handleInputChange} 
