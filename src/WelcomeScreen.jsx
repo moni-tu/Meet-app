@@ -30,7 +30,7 @@ import './WelcomeScreen.css';
                         </div>
                     </div>
                     <a
-                    href="https://YOUR_GITHUB_USERNAME.github.io/meet/privacy.html"
+                    href="https://moni-tu.github.io/Meet-app/privacy.html"
                     rel="nofollow noopener"
                     >
                     Privacy policy
