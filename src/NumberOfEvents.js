@@ -28,7 +28,7 @@ class NumberOfEvents extends Component {
     const { numberOfEvents } = this.state;
 
     return (
-      <div className='NumberOfEvents' style= {{ marginRight:"0px", marginLeft:"1400px", position:"relative", marginBottom:"0px", overflow:"auto"}}> 
+      <div className='NumberOfEvents' style= {{ position:"relative", overflow:"auto"}}> 
         <p> Change number of events per page </p> 
         <input
           type="number"
