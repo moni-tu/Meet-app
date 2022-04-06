@@ -6,7 +6,7 @@ import NumberOfEvents from './NumberOfEvents';
 import { getEvents, extractLocations, checkToken, getAccessToken } from './api';
 import './nprogress.css';
 import WelcomeScreen from './WelcomeScreen';
-import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Line, ResponsiveContainer } from 'recharts';
 
 class App extends Component {
 
@@ -93,7 +93,8 @@ class App extends Component {
             <XAxis type="category" dataKey="city" name="city" />
             <YAxis type="number" dataKey="number" name="number of events" />
             <Tooltip cursor={{ strokeDasharray: '3 3' }} />
-            <Legend />
+              <Legend verticalAlign="top" height={36}/>
+              <Line name="number of events" type="monotone" dataKey="city" stroke="#8884d8" />
             <Scatter data={this.getData()} fill="#8884d8" />
           </ScatterChart>
         </ResponsiveContainer>
