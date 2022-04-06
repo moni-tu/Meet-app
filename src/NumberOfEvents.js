@@ -4,16 +4,16 @@ import { ErrorAlert } from './Alert';
 class NumberOfEvents extends Component {
 
     state = {
-		numberOfEvents: '20',
+		numberOfEvents: '30',
     errorText:''
 	}
 
 	handleInputChange = (event) => {
 		const value = event.target.value;
-    if (value <= 0 || value > 20) {
+    if (value <= 0 || value > 30) {
       this.setState({
         numberOfEvents: value,
-        errorText:"Please enter a number from 1 to 20"
+        errorText:"Please enter a number from 1 to 30"
       });
       } else {
       this.setState({
