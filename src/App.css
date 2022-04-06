@@ -24,7 +24,17 @@ p {
   display: block;
 }
 
-input[type='text'],
+input[type='text']{
+  padding: 8px 6px 8px 10px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  line-height: 20px;
+  align-self: center;
+  height: 38px;
+}
+
 input[type='number'] {
   padding: 8px 6px 8px 10px;
   border-radius: 4px;
@@ -34,6 +44,7 @@ input[type='number'] {
   line-height: 20px;
   align-self: center;
   height: 38px;
+  width: 100px !important;
 }
 
 .city {
@@ -112,12 +123,6 @@ input[type='number'] {
 
 .description {
   overflow-x: hidden;
-}
-
-.numberOfEvents {
-  width: 200px;
-  margin: 20px auto;
-  text-align: center;
 }
 
 .button-wrapper {
@@ -208,13 +213,5 @@ input[type='number'] {
     min-width: auto;
     margin: 0 auto;
   }
-  .NumberOfEvents {
-    margin-left:"900px"
-  }
 }
 
-@media only screen and (max-width: 992px) {
-  .NumberOfEvents {
-    margin-right:"300px"
-  }
-}
