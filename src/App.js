@@ -87,7 +87,7 @@ class App extends Component {
         <NumberOfEvents updateNumberofEvents={this.updateNumberofEvents} numberOfEvents={this.state.numberOfEvents} /> 
         <h4>Events in each city</h4>
 
-        <ScatterChart width={730} height={250}
+        <ScatterChart width={800} height={250}
           margin={{ top: 20, right: 20, bottom: 10, left: 10 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis type="category" dataKey="city" name="city" />
