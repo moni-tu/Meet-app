@@ -29,12 +29,12 @@ class NumberOfEvents extends Component {
 
     return (
       <div className='NumberOfEvents' style= {{ position:"relative", overflow:"auto"}}> 
-         <p> Show <input
+         <label> Show <input
           type="number"
           onChange={this.handleInputChange} 
           value={numberOfEvents} 
           className="numberOfEvents"
-        /> events per page </p>
+        /> events per page </label>
         <ErrorAlert text ={this.state.errorText}/>
       </div>
       
