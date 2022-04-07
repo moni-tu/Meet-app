@@ -58,6 +58,7 @@ import NProgress from 'nprogress';
       const data = localStorage.getItem("lastEvents");
       NProgress.done();
       return data?JSON.parse(data.events).events:[];;
+      //.events in the line above could cause problems
     }
     const token = await getAccessToken();
     if (token) {
