@@ -6,6 +6,22 @@ The Meep App is a serverless, progressive web application (PWA) with React build
 development (TDD) technique. The application uses the Meetup API to fetch upcoming events
 for a selected city.
 
+### GETTING STARTED
+
+The easiest way to start is to clone the repository.
+
+# clone the repository
+
+```
+git clone https://github.com/moni-tu/Meet-app.git
+```
+
+## APP PREVIEW
+
+### Meet App All Cities Search Result
+
+![Meet App-all cities_screenshot](https://user-images.githubusercontent.com/91124224/169842860-7bf93666-1a1e-4ec8-a90f-e15898944310.png)
+
 # Features & Requirements
 
 ## Technical Requirements
