@@ -26,13 +26,13 @@ git clone https://github.com/moni-tu/Meet-app.git
 
 ## Technical Requirements
 
-● The app is be a React application.
+● The app is a React application.
 
-● The app is be built using the TDD technique
+● The app is built using the TDD technique
 
-● The app is use the Meetup API and OAuth2 authentication flow.
+● The app uses the Meetup API and OAuth2 authentication flow.
 
-● The app uses serverless functions (AWS lambda is preferred) for the authorization server instead of using a traditional server.
+● The app uses serverless functions (AWS lambda) for the authorization server instead of using a traditional server.
 
 ● The app’s code is hosted in a Git repository on GitHub ### <a href="https://github.com/moni-tu/Meet-app">LIVE DEMO</a>..
 
